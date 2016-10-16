@@ -4,10 +4,13 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -67,6 +70,7 @@ public class BaseClass
 	@AfterMethod
 	public void endTest()
 	{
+	
 		report.endTest(logger);
 		
 		System.out.println("===== Report for test is generated");
@@ -99,4 +103,6 @@ public class BaseClass
 	    return newDate;
 		
 	}
+	
+
 }

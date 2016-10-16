@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.testng.Assert;
 
+
 public class AdminUserManagement 
 {
 
@@ -65,6 +66,8 @@ public class AdminUserManagement
 	
 	public void clickOnAdminLink()
 	{
+	
+		
 		adminLink.click();
 	}
 	

@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="37504" started-at="2016-10-15T04:22:28Z" finished-at="2016-10-15T04:23:05Z">
+  <suite name="Suite" duration-ms="49842" started-at="2016-10-22T04:34:20Z" finished-at="2016-10-22T04:35:10Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="37504" started-at="2016-10-15T04:22:28Z" finished-at="2016-10-15T04:23:05Z">
-      <class name="testcases.hybridTestCases.AddUserWithReport">
-        <test-method status="PASS" signature="setupReport()[pri:0, instance:testcases.hybridTestCases.AddUserWithReport@19bb089b]" name="setupReport" is-config="true" duration-ms="623" started-at="2016-10-15T09:52:27Z" finished-at="2016-10-15T09:52:28Z">
+    <test name="Test" duration-ms="49842" started-at="2016-10-22T04:34:20Z" finished-at="2016-10-22T04:35:10Z">
+      <class name="testcases.hybridTestCases.AddUserWithReport1">
+        <test-method status="PASS" signature="setupReport()[pri:0, instance:testcases.hybridTestCases.AddUserWithReport1@19bb089b]" name="setupReport" is-config="true" duration-ms="531" started-at="2016-10-22T10:04:20Z" finished-at="2016-10-22T10:04:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupReport -->
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:testcases.hybridTestCases.AddUserWithReport@19bb089b]" name="setup" is-config="true" duration-ms="7321" started-at="2016-10-15T09:52:28Z" finished-at="2016-10-15T09:52:35Z">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:testcases.hybridTestCases.AddUserWithReport1@19bb089b]" name="setup" is-config="true" duration-ms="4386" started-at="2016-10-22T10:04:20Z" finished-at="2016-10-22T10:04:25Z">
           <params>
             <param index="0">
               <value>
@@ -22,58 +22,53 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="addUserToApplication()[pri:0, instance:testcases.hybridTestCases.AddUserWithReport@19bb089b]" name="addUserToApplication" duration-ms="22655" started-at="2016-10-15T09:52:35Z" finished-at="2016-10-15T09:52:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addUserToApplication -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:testcases.hybridTestCases.AddUserWithReport@19bb089b]" name="endTest" is-config="true" duration-ms="10" started-at="2016-10-15T09:52:58Z" finished-at="2016-10-15T09:52:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endTest -->
-        <test-method status="FAIL" signature="searchUser()[pri:0, instance:testcases.hybridTestCases.AddUserWithReport@19bb089b]" name="searchUser" duration-ms="4680" started-at="2016-10-15T09:52:58Z" finished-at="2016-10-15T09:53:02Z">
-          <exception class="org.openqa.selenium.ElementNotVisibleException">
+        <test-method status="FAIL" signature="addUserToApplication()[pri:0, instance:testcases.hybridTestCases.AddUserWithReport1@19bb089b]" name="addUserToApplication" duration-ms="39212" started-at="2016-10-22T10:04:25Z" finished-at="2016-10-22T10:05:04Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[element not visible
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='btnSave1']"}
   (Session info: chrome=53.0.2785.143)
   (Driver info: chromedriver=2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4),platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 53 milliseconds
+Command duration or timeout: 20.08 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'Mukesh', ip: '192.168.0.104', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_91'
+System info: host: 'Mukesh', ip: '192.168.0.105', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_91'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4), userDataDir=C:\Users\MUKESH~1\AppData\Local\Temp\scoped_dir8320_27645}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=53.0.2785.143, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: a8bb21a6bdee7264ad50852fb2ac2273]]>
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4), userDataDir=C:\Users\MUKESH~1\AppData\Local\Temp\scoped_dir16532_18909}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=53.0.2785.143, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 55b4662bba2a9c825b01ac753e7c5930
+*** Element info: {Using=xpath, value=.//*[@id='btnSave1']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotVisibleException: element not visible
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='btnSave1']"}
   (Session info: chrome=53.0.2785.143)
   (Driver info: chromedriver=2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4),platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 53 milliseconds
+Command duration or timeout: 20.08 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'Mukesh', ip: '192.168.0.104', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_91'
+System info: host: 'Mukesh', ip: '192.168.0.105', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_91'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4), userDataDir=C:\Users\MUKESH~1\AppData\Local\Temp\scoped_dir8320_27645}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=53.0.2785.143, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: a8bb21a6bdee7264ad50852fb2ac2273
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={chromedriverVersion=2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4), userDataDir=C:\Users\MUKESH~1\AppData\Local\Temp\scoped_dir16532_18909}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=53.0.2785.143, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 55b4662bba2a9c825b01ac753e7c5930
+*** Element info: {Using=xpath, value=.//*[@id='btnSave1']}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy11.click(Unknown Source)
-	at Pages.LogOutPage.logout_from_application(LogOutPage.java:35)
-	at testcases.hybridTestCases.AddUserWithReport.searchUser(AddUserWithReport.java:75)
+	at Pages.AdminUserManagement.clickOnSaveButton(AdminUserManagement.java:105)
+	at testcases.hybridTestCases.AddUserWithReport1.addUserToApplication(AddUserWithReport1.java:65)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
@@ -96,23 +91,45 @@ Session ID: a8bb21a6bdee7264ad50852fb2ac2273
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotVisibleException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchUser -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:testcases.hybridTestCases.AddUserWithReport@19bb089b]" name="endTest" is-config="true" duration-ms="1" started-at="2016-10-15T09:53:02Z" finished-at="2016-10-15T09:53:02Z">
+        </test-method> <!-- addUserToApplication -->
+        <test-method status="PASS" signature="endTest(org.testng.ITestResult)[pri:0, instance:testcases.hybridTestCases.AddUserWithReport1@19bb089b]" name="endTest" is-config="true" duration-ms="410" started-at="2016-10-22T10:05:04Z" finished-at="2016-10-22T10:05:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addUserToApplication status=FAILURE method=AddUserWithReport1.addUserToApplication()[pri:0, instance:testcases.hybridTestCases.AddUserWithReport1@19bb089b] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.hybridTestCases.AddUserWithReport@19bb089b]" name="tearDown" is-config="true" duration-ms="2697" started-at="2016-10-15T09:53:02Z" finished-at="2016-10-15T09:53:05Z">
+        <test-method status="PASS" signature="searchUser()[pri:0, instance:testcases.hybridTestCases.AddUserWithReport1@19bb089b]" name="searchUser" duration-ms="3645" started-at="2016-10-22T10:05:04Z" finished-at="2016-10-22T10:05:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchUser -->
+        <test-method status="PASS" signature="endTest(org.testng.ITestResult)[pri:0, instance:testcases.hybridTestCases.AddUserWithReport1@19bb089b]" name="endTest" is-config="true" duration-ms="282" started-at="2016-10-22T10:05:08Z" finished-at="2016-10-22T10:05:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchUser status=SUCCESS method=AddUserWithReport1.searchUser()[pri:0, instance:testcases.hybridTestCases.AddUserWithReport1@19bb089b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.hybridTestCases.AddUserWithReport1@19bb089b]" name="tearDown" is-config="true" duration-ms="1865" started-at="2016-10-22T10:05:08Z" finished-at="2016-10-22T10:05:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:testcases.hybridTestCases.AddUserWithReport@19bb089b]" name="endReport" is-config="true" duration-ms="1194" started-at="2016-10-15T09:53:05Z" finished-at="2016-10-15T09:53:06Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:testcases.hybridTestCases.AddUserWithReport1@19bb089b]" name="endReport" is-config="true" duration-ms="604" started-at="2016-10-22T10:05:10Z" finished-at="2016-10-22T10:05:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-      </class> <!-- testcases.hybridTestCases.AddUserWithReport -->
+      </class> <!-- testcases.hybridTestCases.AddUserWithReport1 -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

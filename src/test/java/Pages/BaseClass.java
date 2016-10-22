@@ -4,9 +4,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -18,8 +16,11 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
 
+import utility.Helper;
+
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 
 public class BaseClass
 {
@@ -68,9 +69,25 @@ public class BaseClass
 	}
 	
 	@AfterMethod
-	public void endTest()
+	public void endTest(ITestResult result)
 	{
-	
+		
+		if(result.getStatus()==ITestResult.FAILURE)
+		{
+			
+			String path=Helper.captureScreenShot(driver);
+			
+			logger.log(LogStatus.FAIL, logger.addScreenCapture(path));
+		}
+		
+		if(result.getStatus()==ITestResult.SUCCESS)
+		{
+			
+			String path=Helper.captureScreenShot(driver);
+			
+			logger.log(LogStatus.PASS, logger.addScreenCapture(path));
+		}
+		
 		report.endTest(logger);
 		
 		System.out.println("===== Report for test is generated");
@@ -90,7 +107,7 @@ public class BaseClass
 		System.out.println("===== Extent report is generated>>> Kindly check report folder");
 	}
 	
-	public String getDate()
+	public static String getDate()
 	{
 		long time=System.currentTimeMillis();
 		

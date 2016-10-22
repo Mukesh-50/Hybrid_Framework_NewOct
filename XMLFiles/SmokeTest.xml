@@ -4,7 +4,7 @@
   <test name="Test">
     <parameter name="browserName" value="chrome"/>
     <classes>
-      <class name="testcases.hybridTestCases.AddUserWithReport"/>
+      <class name="testcases.hybridTestCases.AddUserWithReport1"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

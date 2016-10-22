@@ -1,6 +1,7 @@
 package utility;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
@@ -13,12 +14,13 @@ import Pages.BaseClass;
 public class Helper 
 {
 
-	public static String captureScreenShot(WebDriver driver)
+	public static String captureScreenShot(WebDriver driver) 
 	{
 		
 		TakesScreenshot ts=(TakesScreenshot)driver;
 		
 		File src=ts.getScreenshotAs(OutputType.FILE);
+		
 		
 		String path=System.getProperty("user.dir")+"/Screenshots/"+BaseClass.getDate()+".png";
 		
@@ -30,6 +32,16 @@ public class Helper
 		{
 			System.out.println("Exception while capturing screenshot");
 			System.out.println("Full info about exception :"+e.getMessage());
+		}
+		catch (Exception e) 
+		{
+			System.out.println("Exception while capturing screenshot");
+			System.out.println("Full info about exception :"+e.getMessage());
+		}
+
+		finally
+		{
+			
 		}
 		
 		return path;

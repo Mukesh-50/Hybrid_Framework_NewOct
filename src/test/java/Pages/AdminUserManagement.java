@@ -30,7 +30,7 @@ public class AdminUserManagement
 	
 	@FindBy(how=How.ID, using="systemUser_confirmPassword") WebElement confirmPassword;
 	
-	@FindBy(xpath=".//*[@id='btnSave1']")WebElement save;
+	@FindBy(xpath=".//*[@id='btnSave']")WebElement save;
 	
 	
 	

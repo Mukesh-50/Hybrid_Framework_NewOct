@@ -7,12 +7,12 @@
     <classes>
       <class name="testcases.hybridTestCases.AddUserWithReport1">
         <methods>
-          <include name="addUserToApplication"/>
           <include name="setup"/>
           <include name="endTest"/>
           <include name="endReport"/>
           <include name="tearDown"/>
           <include name="setupReport"/>
+          <include name="searchUser"/>
         </methods>
       </class> <!-- testcases.hybridTestCases.AddUserWithReport1 -->
     </classes>

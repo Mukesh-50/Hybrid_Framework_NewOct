@@ -9,8 +9,7 @@ public class ExcelConfig {
 
 	XSSFWorkbook wb;
 
-	public ExcelConfig() throws Exception 
-	{
+	public ExcelConfig() throws Exception {
 		
 		System.out.println("========= Excel file is loading=================");
 		
@@ -27,38 +26,37 @@ public class ExcelConfig {
 		// Load the complete excel sheet
 		wb = new XSSFWorkbook(fis);
 
-		System.out
-				.println("=============== Excel file is loaded and Ready to use=========================");
+		System.out.println("======== Excel file is loaded and Ready to use==================");
 	}
 	
 	
 	public String readStringData(String sheetName,int rowIndex,int columnIndex)
 	{
-		String data=wb.getSheet(sheetName).getRow(rowIndex).getCell(columnIndex).getStringCellValue();
+		String data = wb.getSheet(sheetName).getRow(rowIndex).getCell(columnIndex).getStringCellValue();
 		
 		return data;
 	}
 	
-	public int  readNumericData(String sheetName,int rowIndex,int columnIndex)
-	{
-		int  data=(int)wb.getSheet(sheetName).getRow(rowIndex).getCell(columnIndex).getNumericCellValue();
+	public int readNumericData(String sheetName,int rowIndex,int columnIndex){
+		
+		int  data = (int)wb.getSheet(sheetName).getRow(rowIndex).getCell(columnIndex).getNumericCellValue();
 		
 		return data;
 	}
 	
 	
-	public int getRows(String sheetName)
-	{ 
-	 int row=wb.getSheet(sheetName).getPhysicalNumberOfRows();
+	public int getRows(String sheetName){
+		
+		int row = wb.getSheet(sheetName).getPhysicalNumberOfRows();
 	 
-	 return row;
+		return row;
 	}
 	
-	public int getRows(String sheetName,int row)
-	{ 
-	 int col=wb.getSheet(sheetName).getRow(row).getPhysicalNumberOfCells();
+	public int getRows(String sheetName,int row){
+		
+		int col = wb.getSheet(sheetName).getRow(row).getPhysicalNumberOfCells();
 	 
-	 return col;
+		return col;
 	}
 	
 

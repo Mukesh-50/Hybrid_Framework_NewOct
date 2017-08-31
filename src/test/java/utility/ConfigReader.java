@@ -11,6 +11,7 @@ public class ConfigReader {
 	public ConfigReader() {
 
 		try {
+			
 			FileInputStream fis = new FileInputStream(new File("./Configuration/config.properties"));
 
 			pro = new Properties();
@@ -23,10 +24,10 @@ public class ConfigReader {
 		}
 	}
 	
-	public String getSitURL()
+	public String getApplicationURL()
 	{
 		
-		return pro.getProperty("url");
+		return pro.getProperty("ApplicationURL");
 		
 	}
 

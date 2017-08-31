@@ -3,27 +3,25 @@ package dataProvider;
 import utility.ConfigReader;
 import utility.ExcelConfig;
 
-public class DataProvider 
-{
+public class DataProvider {
 
-	
 	public static ExcelConfig getExcel()
 	{
 		
 		ExcelConfig config = null;
-		try 
-		{
+		try {
+			
 			config = new ExcelConfig();
-		} catch (Exception e) 
-		{
+		
+		} catch (Exception e) {
+			
 			
 		}
 		
 		return config;
 	}
 	
-	public static ConfigReader getConfig()
-	{
+	public static ConfigReader getConfig(){
 		
 		ConfigReader reader=new ConfigReader();
 		

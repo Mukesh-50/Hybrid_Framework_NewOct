@@ -1,4 +1,4 @@
-package testcases;
+package testcases.dataDrivenTestCases;
 
 import java.util.concurrent.TimeUnit;
 

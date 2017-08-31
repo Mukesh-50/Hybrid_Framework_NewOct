@@ -1,4 +1,4 @@
-package testcases;
+package testcases.dataDrivenTestCases;
 
 public class DemoClass {
 

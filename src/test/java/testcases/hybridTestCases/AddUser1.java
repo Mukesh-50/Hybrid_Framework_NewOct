@@ -16,7 +16,7 @@ public class AddUser1 extends BaseClass {
 	@Test(priority=1, description="This test will perform login", groups="")
 	public void addUserToApplication() 
 	{
-	    String url=DataProvider.getConfig().getSitURL();
+	    String url=DataProvider.getConfig().getApplicationURL();
 
 		driver.get(url);
 
